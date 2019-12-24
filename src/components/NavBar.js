@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import strava_logo from '../assets/strava_logo.png'
 import twitter_logo from '../assets/twitter_logo.png'
+import { Link } from 'react-router-dom'
 
 const navBar = ({ children }) => { 
 
@@ -11,9 +12,9 @@ return (
         <Navbar bg="dark" variant="dark" sticky="top">
           <Navbar.Brand href="/">Jessica&trade;</Navbar.Brand>
           <Nav className="mr-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/races">Races</Nav.Link>
-            <Nav.Link href="/training">Training</Nav.Link>
+            <Link to="/" className="nav-link">Home</Link>
+            <Link to="/races" className="nav-link">Races</Link>
+            <Link to="/training" className="nav-link">Training</Link>
           </Nav>
 
           {/* social media links on navbar */}
