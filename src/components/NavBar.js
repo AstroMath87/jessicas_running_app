@@ -4,11 +4,11 @@ import Nav from 'react-bootstrap/Nav'
 import strava_logo from '../assets/strava_logo.png'
 import twitter_logo from '../assets/twitter_logo.png'
 
-const navBar = () => { 
+const navBar = ({ children }) => { 
 
 return (
     <div>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" sticky="top">
           <Navbar.Brand href="/">Jessica&trade;</Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
@@ -36,6 +36,7 @@ return (
               />{' '}
               </Navbar.Brand>
         </Navbar>
+        {children}
     </div>
           
 )

@@ -1,20 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
-import NavBar from './components/NavBar'
 import './App.css';
 
 import EmailForm from './components/EmailForm'
 
-
 function App() {
 
   const emailForm = <EmailForm/>
-  const navBar = <NavBar/>
 
   return (
 
     <div className="App">
-      {navBar}
+      {/* {navBar} */}
       <header className="App-header">
         {emailForm}
         <img src={logo} className="App-logo" alt="logo" />
